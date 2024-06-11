@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const handleClick = (event) => {
+    event.target.classList.toggle ("active");
+};
+
+return (
+    <div className="container">
+        <span onClick={handleClick}>P</span>
+        <span onClick={handleClick}>R</span>
+        <span onClick={handleClick}>O</span>
+        <span onClick={handleClick}>C</span>
+        <span onClick={handleClick}>O</span>
+        <span onClick={handleClick}>D</span>
+        <span onClick={handleClick}>E</span>
     </div>
   );
 }
